@@ -72,7 +72,7 @@ export const SendVerificationCode = async (email, otp) => {
 
        try {
               const info = await transporter.sendMail({
-                     from: '"Unil Prajapati" <prajapati.unil26@gmail.com>', // sender address
+                     from: `"Unil Prajapati" <${process.env.EMAIL_AUTH_EMAIL}>`, // sender address
                      to: email, // list of receivers
                      subject: `Verify Your Email`, // Subject line
                      text: "Hello world?", // plain text body

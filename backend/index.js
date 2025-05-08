@@ -14,7 +14,7 @@ app.use(express.json())
 app.use(cookieParser())
 //for cross origin connection
 app.use(cors({
-       origin: 'http://localhost:5174', // Your frontend URL (assuming you're using Vite)
+       origin: 'http://localhost:5173', // Your frontend URL (assuming you're using Vite)
        credentials: true  // This allows cookies to be sent and received
      }))
 //all routes

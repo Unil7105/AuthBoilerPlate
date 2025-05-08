@@ -78,7 +78,7 @@ export const SendResetPasswordEmail = async (email, resetLink) => {
 
        try {
               const info = await transporter.sendMail({
-                     from: '"Unil Prajapati" <prajapati.unil26@gmail.com>',
+                     from: `"Unil Prajapati" <${process.env.EMAIL_AUTH_EMAIL}>`, // sender address
                      to: email,
                      subject: `Reset Your Password`,
                      html: emailTemplate,
